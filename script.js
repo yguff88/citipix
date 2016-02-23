@@ -11,7 +11,7 @@ function submit(){
 	cityChoice = $('#city-type').val().toLowerCase();
 	if(cityChoice==="new york" || cityChoice==="new york city" || cityChoice==="nyc") {
 		$('body').addClass("nyc");
-	} else if (cityChoice==="Austin" || cityChoice==="atx") {
+	} else if (cityChoice==="austin" || cityChoice==="atx") {
 		$('body').addClass("austin");
 	} else if (cityChoice==="san francisco" || cityChoice==="sf" || cityChoice==="bay area") {
 		$('body').addClass("sf");
@@ -24,9 +24,10 @@ function submit(){
 	}
 };
 	
-
 // on click update background image
 $(document).ready(function(){
-	event.preventDefault();
-	$('#submit-btn').on('click',submit);
+$('#submit-btn').on('click',function(event){
+event.preventDefault();
+submit();
+});
 });
