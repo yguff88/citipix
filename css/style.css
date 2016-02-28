@@ -58,11 +58,24 @@ body {
 }
 
 
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 
 /* Center the container */
+
+
+#dropdowndiv {
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+}
+
+select {
+  width:100px;
+}
+
 .container {
 	width: 720px;
 	margin: auto;
